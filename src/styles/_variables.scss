@@ -1,0 +1,27 @@
+@import "@fontsource/montserrat";
+
+// Colors
+$primary-linear-gradient: linear-gradient(to right, #81008c, #540096);
+$primary-color: #ce44e4;
+$body-bg-color: #ffe7e7;
+$section-bg-color: #fff8f8;
+$dash-color: #919191;
+
+// Font Variables
+$default-font-family: Montserrat, sans-serif;
+$primary-font-color: $primary-linear-gradient;
+$secondary-font-color: #e35050;
+$primary-font-medium-line-height: 130%;
+$primary-font-bold-line-height: 130%;
+$primary-font-semi-bold-line-height: 130%;
+$primary-font-regular-line-height: 130%;
+
+// Button Variables
+$button-font-color: #ffffff;
+$button-color: #973499;
+$buttonPadding: 1.2rem 1.6rem 1.2rem 1.6rem;
+
+// Media Query Breakpoints
+$xl: 1200px;
+$lg: 992px;
+$md: 768px;

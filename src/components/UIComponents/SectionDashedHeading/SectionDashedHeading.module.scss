@@ -1,0 +1,21 @@
+@import "../../../styles/variables";
+@import "../../../styles/mixins";
+@import "../../../styles/typography";
+@import "../../../styles/commonClasses";
+
+.root {
+  @include displayFlex(row, 2.4rem, space-between, center);
+  position: relative;
+
+  & > .title {
+    flex: 0 0 auto;
+    text-transform: uppercase;
+    @extend .h1;
+    @extend .primaryFontColor;
+  }
+
+  & > .hr {
+    border-top: 0.2rem dashed $dash-color;
+    flex: 1;
+  }
+}

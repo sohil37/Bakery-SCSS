@@ -1,0 +1,18 @@
+@import "../../../styles/typography";
+@import "../../../styles/variables";
+
+.root {
+  @extend .h4;
+  background-color: $button-color;
+  color: $button-font-color;
+  line-height: $primary-font-semi-bold-line-height;
+  padding: $buttonPadding;
+  border-radius: 1rem;
+  border: none;
+  width: max-content;
+  text-transform: capitalize;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

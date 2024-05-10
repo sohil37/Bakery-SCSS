@@ -1,0 +1,48 @@
+@import "../../../styles/variables";
+@import "../../../styles/mixins";
+@import "../../../styles/typography";
+
+.root {
+  border-top: 0.2rem dashed $dash-color;
+  width: 100%;
+  padding-top: 8.5rem;
+  padding-inline: 2.9rem;
+  position: relative;
+  @include displayFlex(row, 10.9rem);
+
+  & > .item {
+    @include displayFlex(column, 2.4rem, space-between, center);
+
+    & > .imageContainer {
+      height: 16.7rem;
+      width: 16.7rem;
+      border-radius: 50%;
+      background-color: white;
+      @include displayFlex(row, 0, center, center);
+
+      & > .dot {
+        height: 1.6rem;
+        width: 1.6rem;
+        border-radius: 50%;
+        position: absolute;
+        background-color: white;
+        top: -0.8rem;
+        z-index: 2;
+      }
+    }
+
+    & > .imageContainer::after {
+      content: "";
+      height: 8.5rem;
+      border: 0.025rem solid $dash-color;
+      position: absolute;
+      top: 0;
+      z-index: 1;
+    }
+
+    & > .desc {
+      text-align: center;
+      @extend .text;
+    }
+  }
+}

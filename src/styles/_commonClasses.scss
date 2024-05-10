@@ -1,0 +1,26 @@
+@import "variables";
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 100%;
+
+  // Media queries for responsiveness
+  @media (min-width: $md) {
+    max-width: $md;
+  }
+
+  @media (min-width: $lg) {
+    max-width: $lg;
+  }
+
+  @media (min-width: $xl) {
+    max-width: $xl;
+  }
+}
+
+.primaryFontColor {
+  color: transparent;
+  background: $primary-font-color;
+  background-clip: text;
+}

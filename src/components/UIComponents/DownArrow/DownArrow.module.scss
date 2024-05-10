@@ -1,0 +1,50 @@
+$arrowGap: 0.7rem;
+$arrowLength: 4rem;
+
+.arrow {
+  border-left: none;
+  border-top: none;
+}
+
+.root {
+  position: relative;
+  transform: rotate(45deg);
+  top: -$arrowLength;
+
+  &:hover {
+    cursor: pointer;
+
+    div {
+      border-color: white;
+      border-width: 0.3rem;
+    }
+  }
+
+  & > div {
+    position: absolute;
+    height: $arrowLength;
+    width: $arrowLength;
+    border: 0.4rem solid #f3bdbf;
+  }
+
+  & > :nth-child(1) {
+    top: $arrowGap;
+    left: $arrowGap;
+    @extend .arrow;
+  }
+  & > :nth-child(2) {
+    top: $arrowGap * 2;
+    left: $arrowGap * 2;
+    @extend .arrow;
+  }
+  & > :nth-child(3) {
+    top: $arrowGap * 3;
+    left: $arrowGap * 3;
+    @extend .arrow;
+  }
+  & > :nth-child(4) {
+    top: $arrowGap * 4;
+    left: $arrowGap * 4;
+    @extend .arrow;
+  }
+}

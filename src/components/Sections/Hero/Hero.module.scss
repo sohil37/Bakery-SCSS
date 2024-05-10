@@ -1,0 +1,41 @@
+@import "../../../styles/mixins";
+@import "../../../styles/commonClasses";
+@import "../../../styles/typography";
+
+.root {
+  padding-top: 14.6rem;
+  padding-bottom: 14.6rem;
+  @include displayFlex(column, 0, start, center);
+  @extend .container;
+
+  & > .contentContainer {
+    @include displayFlex(row, 2.2rem, space-between, center);
+
+    & > .leftContainer {
+      width: 50%;
+      padding-right: 10rem;
+      @include displayFlex(column, 3.2rem);
+
+      & > .title {
+        @extend .h1;
+        @extend .primaryFontColor;
+      }
+
+      & > .desc {
+        @extend .text;
+      }
+
+      & > .socialButtonContainer {
+        @include displayFlex(row, 1.2rem);
+      }
+    }
+
+    & > .rightContainer {
+      width: 50%;
+
+      & > img {
+        width: 100%;
+      }
+    }
+  }
+}

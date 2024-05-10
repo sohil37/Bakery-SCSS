@@ -1,0 +1,27 @@
+@import "variables";
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; //62.5% = 10px
+  font-family: $default-font-family;
+}
+
+body {
+  background-color: $body-bg-color;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+
+  &:hover {
+    color: $primary-color;
+  }
+}

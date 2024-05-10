@@ -1,0 +1,11 @@
+@import "../../../styles/variables";
+@import "../../../styles/commonClasses";
+
+.root {
+  padding-top: 15.8rem;
+  background-color: $section-bg-color;
+
+  & > .sectionContainer {
+    @extend .container;
+  }
+}
