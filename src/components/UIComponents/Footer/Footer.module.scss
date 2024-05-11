@@ -1,0 +1,51 @@
+@import "../../../styles/variables";
+@import "../../../styles/mixins";
+@import "../../../styles/commonClasses";
+@import "../../../styles/typography";
+
+.root {
+  border-top: 0.2rem solid $dash-color;
+
+  & > .footer {
+    padding-block: 6rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(auto, 1fr);
+    column-gap: 5rem;
+    @extend .container;
+    // @include displayFlex(row, 5rem);
+
+    & > .leftContainer {
+      @include displayFlex(column, _, space-between);
+
+      & > .brand {
+        @extend .h2;
+        @extend .primaryFontColor;
+      }
+
+      & > .desc {
+        @extend .text;
+      }
+
+      & > .socialButtonContainer {
+        @include displayFlex(row, 1.2rem);
+      }
+    }
+
+    & > .rightContainer {
+      @include displayFlex(row, 10rem);
+
+      & > .linksContainer {
+        @include displayFlex(column, 3.9rem);
+
+        & > .linksHeading {
+          @extend .h4;
+        }
+
+        & > a {
+          @extend .text;
+        }
+      }
+    }
+  }
+}
