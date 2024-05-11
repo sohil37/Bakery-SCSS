@@ -25,6 +25,12 @@
   line-height: $primary-font-semi-bold-line-height;
 }
 
+.h5 {
+  @include primaryFontMedium;
+  font-size: 2.5rem;
+  line-height: $primary-font-regular-line-height;
+}
+
 .text {
   @include primaryFontRegular;
   font-size: 2rem;

@@ -1,0 +1,50 @@
+@import "../../../styles/commonClasses";
+@import "../../../styles/mixins";
+@import "../../../styles/typography";
+
+.root {
+  @extend .card;
+  padding: 1.7rem;
+  width: 33.3%;
+  border-radius: 1.5rem;
+
+  & > .imgContainer {
+    position: relative;
+
+    & > .img {
+      height: 23.5rem;
+      width: 100%;
+      border-radius: 0.5rem;
+    }
+
+    & > .likeBtnContainer {
+      position: absolute;
+      top: 1.5rem;
+      right: 1.5rem;
+
+      & .likeButton {
+        height: 2.4rem;
+        width: 2.4rem;
+      }
+    }
+  }
+
+  & > .title {
+    @extend .h3;
+    margin-top: 1.6rem;
+  }
+
+  & > .desc {
+    @extend .text;
+    margin-top: 1.6rem;
+  }
+
+  & > .actionContainer {
+    margin-top: 4.6rem;
+    @include displayFlex(row, 10.3rem, space-between, center);
+
+    & > .price {
+      @extend .h5;
+    }
+  }
+}
