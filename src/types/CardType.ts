@@ -5,3 +5,10 @@ export type BestSellersCardType = {
   price: string;
   id: number;
 };
+
+export type NewArticlesCardType = {
+  imgUrl: string;
+  title: string;
+  date: string;
+  id: number;
+};

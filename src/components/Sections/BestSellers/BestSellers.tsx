@@ -2,7 +2,7 @@ import cake4 from "/images/products/cakes/cake4.png";
 import cake5 from "/images/products/cakes/cake5.png";
 import cake6 from "/images/products/cakes/cake6.png";
 
-import { BestSellersCardType } from "../../../types/BestSellerCardType";
+import { BestSellersCardType } from "../../../types/CardType";
 import BestSellersCard from "../../UIComponents/BestSellersCard/BestSellersCard";
 import SectionDashedHeading from "../../UIComponents/SectionDashedHeading/SectionDashedHeading";
 import TransparentButton from "../../UIComponents/TransparentButton/TransparentButton";
@@ -44,10 +44,9 @@ function BestSellers() {
           <div className={styles.carousel}>
             {data.map((curCard) => {
               return (
-                <BestSellersCard
-                  {...curCard}
-                  key={curCard.id}
-                ></BestSellersCard>
+                <div key={curCard.id} className={styles.cardContainer}>
+                  <BestSellersCard {...curCard}></BestSellersCard>
+                </div>
               );
             })}
           </div>

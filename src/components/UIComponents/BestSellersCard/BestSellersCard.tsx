@@ -1,7 +1,7 @@
 import { faHeart } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import { BestSellersCardType } from "../../../types/BestSellerCardType";
+import { BestSellersCardType } from "../../../types/CardType";
 import Button from "../Button/Button";
 import TransparentButton from "../TransparentButton/TransparentButton";
 import styles from "./BestSellersCard.module.scss";

@@ -1,7 +1,6 @@
 @import "../../../styles/variables";
 @import "../../../styles/commonClasses";
 @import "../../../styles/mixins";
-@import "../../../styles/typography";
 
 .root {
   padding-top: 15.8rem;
@@ -12,13 +11,6 @@
 
     & > .carouselContainer {
       margin-top: 2.4rem;
-
-      @include displayFlex(column, 4rem, _, end);
-
-      & .text {
-        @extend .h4;
-        color: $secondary-font-color;
-      }
 
       & > .carousel {
         @include displayFlex(row, 3.5rem, space-between);
