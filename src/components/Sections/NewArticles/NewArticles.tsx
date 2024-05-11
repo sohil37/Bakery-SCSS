@@ -31,18 +31,16 @@ const data: NewArticlesCardType[] = [
 function NewArticles() {
   return (
     <div className={styles.root}>
-      <div className={styles.sectionContainer}>
-        <SectionDashedHeading heading="OUR NEW ARTICLES" />
-        <div className={styles.carouselContainer}>
-          <div className={styles.carousel}>
-            {data.map((curCard) => {
-              return (
-                <div key={curCard.id} className={styles.cardContainer}>
-                  <NewArticlesCard {...curCard}></NewArticlesCard>
-                </div>
-              );
-            })}
-          </div>
+      <SectionDashedHeading heading="OUR NEW ARTICLES" />
+      <div className={styles.carouselContainer}>
+        <div className={styles.carousel}>
+          {data.map((curCard) => {
+            return (
+              <div key={curCard.id} className={styles.cardContainer}>
+                <NewArticlesCard {...curCard}></NewArticlesCard>
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>

@@ -3,15 +3,18 @@ import CollectionSection from "./components/Sections/Collections/Collections";
 import HeroSection from "./components/Sections/Hero/Hero";
 import NewArticles from "./components/Sections/NewArticles/NewArticles";
 import Navbar from "./components/UIComponents/Navbar/Navbar";
+import styles from "./styles/App.module.scss";
 
 function App() {
   return (
     <>
       <Navbar />
       <HeroSection />
-      <CollectionSection />
-      <BestSellers />
-      <NewArticles />
+      <div className={styles.sections}>
+        <CollectionSection />
+        <BestSellers />
+        <NewArticles />
+      </div>
     </>
   );
 }

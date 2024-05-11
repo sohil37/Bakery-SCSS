@@ -35,21 +35,19 @@ const data: BestSellersCardType[] = [
 function BestSellers() {
   return (
     <div className={styles.root}>
-      <div className={styles.sectionContainer}>
-        <SectionDashedHeading heading="OUR BEST SELLERS" />
-        <div className={styles.carouselContainer}>
-          <TransparentButton>
-            <span className={styles.text}>See All</span>
-          </TransparentButton>
-          <div className={styles.carousel}>
-            {data.map((curCard) => {
-              return (
-                <div key={curCard.id} className={styles.cardContainer}>
-                  <BestSellersCard {...curCard}></BestSellersCard>
-                </div>
-              );
-            })}
-          </div>
+      <SectionDashedHeading heading="OUR BEST SELLERS" />
+      <div className={styles.carouselContainer}>
+        <TransparentButton>
+          <span className={styles.text}>See All</span>
+        </TransparentButton>
+        <div className={styles.carousel}>
+          {data.map((curCard) => {
+            return (
+              <div key={curCard.id} className={styles.cardContainer}>
+                <BestSellersCard {...curCard}></BestSellersCard>
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>

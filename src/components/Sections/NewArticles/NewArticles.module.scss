@@ -5,20 +5,17 @@
 .root {
   padding-top: 15.8rem;
   background-color: $section-bg-color;
+  @extend .container;
 
-  & > .sectionContainer {
-    @extend .container;
+  & > .carouselContainer {
+    margin-top: 2.4rem;
 
-    & > .carouselContainer {
-      margin-top: 2.4rem;
+    & > .carousel {
+      @include displayFlex(row, 3.5rem, space-between);
+      width: 100%;
 
-      & > .carousel {
-        @include displayFlex(row, 3.5rem, space-between);
-        width: 100%;
-
-        & > .cardContainer {
-          width: 33.3%;
-        }
+      & > .cardContainer {
+        width: 33.3%;
       }
     }
   }
