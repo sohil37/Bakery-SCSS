@@ -12,3 +12,11 @@ export type NewArticlesCardType = {
   date: string;
   id: number;
 };
+
+export type OurCustomersCardType = {
+  personImgUrl: string;
+  name: string;
+  place: string;
+  desc: string;
+  id: number;
+};

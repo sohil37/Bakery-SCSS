@@ -19,6 +19,7 @@
       border-radius: 50%;
       background-color: white;
       @include displayFlex(row, 0, center, center);
+      box-shadow: 0.2rem 1.3rem 2rem rgba(255, 190, 190, 0.25);
 
       & > .dot {
         height: 1.6rem;

@@ -1,0 +1,37 @@
+@import "../../../styles/commonClasses";
+@import "../../../styles/mixins";
+@import "../../../styles/typography";
+
+.root {
+  @extend .card;
+  border-bottom: 0.5rem solid rgba(255, 154, 233, 0.59);
+  padding: 4.3rem 5rem;
+
+  & > .header {
+    @include displayFlex(row, 3.2rem, _, center);
+
+    & > img {
+      height: 8.5rem;
+      width: 8.5rem;
+    }
+
+    & > .namePlaceContainer {
+      @include displayFlex(column, 0.8rem, center);
+
+      & > .name {
+        @include primaryFontSemiBold;
+        font-size: 3rem;
+        line-height: $primary-font-semi-bold-line-height;
+      }
+
+      & > .place {
+        @extend .text;
+      }
+    }
+  }
+
+  & > .desc {
+    margin-top: 3.2rem;
+    @extend .text;
+  }
+}
