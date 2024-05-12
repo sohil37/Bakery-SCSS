@@ -40,7 +40,7 @@
 
   & > .actionContainer {
     margin-top: 4.6rem;
-    @include displayFlex(row, 10.3rem, space-between, center);
+    @include displayFlex(row, _, space-between, center);
 
     & > .price {
       @extend .h5;

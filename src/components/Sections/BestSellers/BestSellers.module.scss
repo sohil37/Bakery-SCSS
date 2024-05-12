@@ -17,14 +17,5 @@
       @extend .h4;
       color: $secondary-font-color;
     }
-
-    & > .carousel {
-      @include displayFlex(row, 3.5rem, space-between);
-      width: 100%;
-
-      & > .cardContainer {
-        width: 33.3%;
-      }
-    }
   }
 }

@@ -10,14 +10,5 @@
 
   & > .carouselContainer {
     margin-top: 2.4rem;
-
-    & > .carousel {
-      @include displayFlex(row, 6.6rem, space-between);
-      width: 100%;
-
-      & > .cardContainer {
-        width: 50%;
-      }
-    }
   }
 }

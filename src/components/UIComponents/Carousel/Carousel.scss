@@ -1,0 +1,31 @@
+@import "../../../styles/mixins";
+@import "../../../styles/commonClasses";
+
+.root {
+  @extend .container;
+}
+
+.slick-slide {
+  padding-inline: 1.75rem;
+}
+.slick-track {
+  margin-bottom: 2.4rem;
+}
+.slick-dots {
+  @include displayFlex(row, 0.5rem);
+
+  li {
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    background-color: #e4e4e4;
+
+    button::before {
+      content: "";
+    }
+  }
+
+  .slick-active {
+    background-color: #ce7fff;
+  }
+}
