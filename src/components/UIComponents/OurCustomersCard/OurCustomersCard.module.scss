@@ -19,9 +19,8 @@
       @include displayFlex(column, 0.8rem, center);
 
       & > .name {
+        @extend .h2;
         @include primaryFontSemiBold;
-        font-size: 3rem;
-        line-height: $primary-font-semi-bold-line-height;
       }
 
       & > .place {

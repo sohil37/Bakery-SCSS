@@ -1,9 +1,15 @@
-import { faFacebook, faInstagram, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+import donuts from "/images/products/donuts.png";
 
-import Button from '../../UIComponents/Button/Button';
-import DownArrow from '../../UIComponents/DownArrow/DownArrow';
-import IconButton from '../../UIComponents/IconButton/IconButton';
-import styles from './Hero.module.scss';
+import {
+  faFacebook,
+  faInstagram,
+  faLinkedinIn,
+} from "@fortawesome/free-brands-svg-icons";
+
+import Button from "../../UIComponents/Button/Button";
+import DownArrow from "../../UIComponents/DownArrow/DownArrow";
+import IconButton from "../../UIComponents/IconButton/IconButton";
+import styles from "./Hero.module.scss";
 
 const iconButtonBg = "#480054";
 const iconColor = "#ffe7e7";
@@ -40,7 +46,7 @@ function HeroSection() {
           </div>
         </div>
         <div className={styles.rightContainer}>
-          <img src="/images/products/donuts.png" alt="donuts" />
+          <img src={donuts} alt="donuts" />
         </div>
       </div>
       <DownArrow />

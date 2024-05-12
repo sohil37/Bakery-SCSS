@@ -3,12 +3,19 @@
 @import "../../../styles/typography";
 
 .root {
-  border-top: 0.2rem dashed $dash-color;
-  width: 100%;
   padding-top: 8.5rem;
   padding-inline: 2.9rem;
   position: relative;
   @include displayFlex(row, 10.9rem);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 2.9rem;
+    width: calc(100% - (2.9rem * 2));
+    border-top: 0.2rem dashed $dash-color;
+  }
 
   & > .item {
     @include displayFlex(column, 2.4rem, space-between, center);
@@ -26,7 +33,6 @@
         width: 1.6rem;
         border-radius: 50%;
         position: absolute;
-        background-color: white;
         top: -0.8rem;
         z-index: 2;
       }

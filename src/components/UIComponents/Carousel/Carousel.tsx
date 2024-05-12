@@ -20,6 +20,13 @@ function Carousel(props: { items: JSX.Element[]; itemsToShow: 2 | 3 }) {
           slidesToScroll: props.itemsToShow === 3 ? 2 : 1,
         },
       },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
     ],
   };
 
