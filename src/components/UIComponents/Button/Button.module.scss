@@ -2,7 +2,7 @@
 @import "../../../styles/variables";
 
 .root {
-  @extend .h4;
+  @extend .button;
   background-color: $button-color;
   color: $button-font-color;
   line-height: $primary-font-semi-bold-line-height;

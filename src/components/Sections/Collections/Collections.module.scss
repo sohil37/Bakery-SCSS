@@ -3,8 +3,8 @@
 @import "../../../styles/typography";
 @import "../../../styles/commonClasses";
 
-$wave-height: 5.5rem;
-$wave-width: 80rem;
+$wave-height: 4.5rem;
+$wave-width: 55rem;
 
 .root {
   padding-top: 25.2rem;
@@ -26,6 +26,7 @@ $wave-width: 80rem;
     @extend .container;
 
     & > .leftContainer {
+      width: 30%;
       @include displayFlex(column, 2.4rem);
 
       & > .title {
@@ -35,6 +36,26 @@ $wave-width: 80rem;
       & > .desc {
         @extend .h2;
         color: $secondary-font-color;
+      }
+    }
+
+    & > .rightContainer {
+      width: 70%;
+    }
+  }
+}
+
+@media (min-width: $lg) and (max-width: $xl) {
+  .root {
+    padding-top: 18rem;
+    & > .sectionContainer {
+      gap: 5rem;
+
+      & > .leftContainer {
+        width: 30%;
+      }
+      & > .rightContainer {
+        width: 70%;
       }
     }
   }

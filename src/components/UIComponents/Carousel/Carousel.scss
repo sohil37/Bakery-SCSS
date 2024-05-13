@@ -2,7 +2,7 @@
 @import "../../../styles/commonClasses";
 
 .root {
-  @extend .container;
+  width: 100%;
 }
 
 .slick-slide {
@@ -27,5 +27,11 @@
 
   .slick-active {
     background-color: #ce7fff;
+  }
+}
+
+@media (min-width: $lg) and (max-width: $xl) {
+  .slick-slide {
+    padding-inline: 1.5rem;
   }
 }

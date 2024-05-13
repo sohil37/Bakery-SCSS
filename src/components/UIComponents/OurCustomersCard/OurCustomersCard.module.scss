@@ -34,3 +34,21 @@
     @extend .text;
   }
 }
+
+@media (min-width: $lg) and (max-width: $xl) {
+  .root {
+    padding: 3.5rem;
+
+    & > .header {
+      & > .namePlaceContainer {
+        & > .name {
+          font-size: 2.3rem;
+        }
+      }
+    }
+
+    & > .desc {
+      font-size: 1.6rem;
+    }
+  }
+}

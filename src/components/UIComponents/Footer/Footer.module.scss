@@ -13,7 +13,6 @@
     grid-auto-rows: minmax(auto, 1fr);
     column-gap: 5rem;
     @extend .container;
-    // @include displayFlex(row, 5rem);
 
     & > .leftContainer {
       @include displayFlex(column, _, space-between);
@@ -44,6 +43,28 @@
 
         & > a {
           @extend .text;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $lg) and (max-width: $xl) {
+  .root {
+    & > .footer {
+      & > .leftContainer {
+        & > .desc {
+          font-size: 1.6rem;
+        }
+      }
+      & > .rightContainer {
+        gap: 5rem;
+        & > .linksContainer {
+          gap: 2rem;
+
+          & > a {
+            font-size: 1.6rem;
+          }
         }
       }
     }

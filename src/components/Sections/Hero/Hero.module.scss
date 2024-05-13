@@ -3,8 +3,7 @@
 @import "../../../styles/typography";
 
 .root {
-  padding-top: 14.6rem;
-  padding-bottom: 14.6rem;
+  padding-block: 14.6rem;
   @include displayFlex(column, 0, start, center);
   @extend .container;
 
@@ -35,6 +34,19 @@
 
       & > img {
         width: 100%;
+      }
+    }
+  }
+}
+
+@media (min-width: $lg) and (max-width: $xl) {
+  .root {
+    padding-top: 12rem;
+    gap: 3rem;
+
+    & > .contentContainer {
+      & > .leftContainer {
+        padding-right: 5rem;
       }
     }
   }

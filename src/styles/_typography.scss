@@ -36,3 +36,37 @@
   font-size: 2rem;
   line-height: $primary-font-regular-line-height;
 }
+
+.button {
+  @extend .h4;
+}
+
+@media (min-width: $lg) and (max-width: $xl) {
+  .h1 {
+    font-size: 4rem;
+  }
+
+  .h2 {
+    font-size: 2.5rem;
+  }
+
+  .h3 {
+    font-size: 2.2rem;
+  }
+
+  .h4 {
+    font-size: 2rem;
+  }
+
+  .h5 {
+    font-size: 2rem;
+  }
+
+  .text {
+    font-size: 1.8rem;
+  }
+
+  .button {
+    font-size: 1.5rem;
+  }
+}

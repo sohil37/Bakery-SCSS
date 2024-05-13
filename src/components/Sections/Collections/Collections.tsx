@@ -27,7 +27,9 @@ function CollectionSection() {
           <p className={styles.title}>See Collection</p>
           <h2 className={styles.desc}>OUR FINE HOME MADE CHOCOLATES</h2>
         </div>
-        <DottedTimeline timeline={timeline} />
+        <div className={styles.rightContainer}>
+          <DottedTimeline timeline={timeline} />
+        </div>
       </div>
     </div>
   );

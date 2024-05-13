@@ -47,3 +47,17 @@
     }
   }
 }
+
+@media (min-width: $lg) and (max-width: $xl) {
+  .root {
+    & > .imgContainer {
+      & > .img {
+        height: 15rem;
+      }
+    }
+
+    & > .desc {
+      font-size: 1.6rem;
+    }
+  }
+}

@@ -39,3 +39,21 @@
     }
   }
 }
+
+@media (min-width: $lg) and (max-width: $xl) {
+  .root {
+    height: 37rem;
+
+    & > .contentContainer {
+      & > .date {
+        width: 6rem;
+        font-size: 1.5rem;
+        padding: 1.2rem 0.2rem;
+      }
+
+      & > .title {
+        font-size: 1.8rem;
+      }
+    }
+  }
+}
