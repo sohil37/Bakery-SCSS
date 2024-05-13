@@ -17,3 +17,9 @@
     padding-top: 12rem;
   }
 }
+
+@media (min-width: $sm) and (max-width: $md) {
+  .root {
+    padding-top: 10rem;
+  }
+}

@@ -3,8 +3,10 @@
 @import "../../../styles/typography";
 @import "../../../styles/commonClasses";
 
-$wave-height: 4.5rem;
-$wave-width: 55rem;
+$lg-wave-height: 4.5rem;
+$lg-wave-width: 55rem;
+$sm-wave-height: 2.5rem;
+$sm-wave-width: 30rem;
 
 .root {
   padding-top: 25.2rem;
@@ -14,11 +16,11 @@ $wave-width: 55rem;
     content: "";
     position: absolute;
     width: 100%;
-    height: $wave-height;
+    height: $lg-wave-height;
     background-color: $body-bg-color;
     top: 0;
     mask-image: url("/images/assets/wave.svg");
-    mask-size: $wave-width $wave-height;
+    mask-size: $lg-wave-width $lg-wave-height;
   }
 
   & > .sectionContainer {
@@ -72,6 +74,29 @@ $wave-width: 55rem;
       }
       & > .rightContainer {
         width: 70%;
+      }
+    }
+  }
+}
+
+@media (min-width: $sm) and (max-width: $md) {
+  .root {
+    padding-top: 12rem;
+
+    &::before {
+      height: $sm-wave-height;
+      mask-size: $sm-wave-width $sm-wave-height;
+    }
+
+    & > .sectionContainer {
+      gap: 3rem;
+      flex-direction: column;
+
+      & > .leftContainer {
+        width: 100%;
+      }
+      & > .rightContainer {
+        width: 100%;
       }
     }
   }

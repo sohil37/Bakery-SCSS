@@ -100,3 +100,33 @@
     font-size: 1.5rem;
   }
 }
+
+@media (min-width: $sm) and (max-width: $md) {
+  .h1 {
+    font-size: 2.5rem;
+  }
+
+  .h2 {
+    font-size: 2rem;
+  }
+
+  .h3 {
+    font-size: 1.8rem;
+  }
+
+  .h4 {
+    font-size: 1.5rem;
+  }
+
+  .h5 {
+    font-size: 2rem;
+  }
+
+  .text {
+    font-size: 1.4rem;
+  }
+
+  .button {
+    font-size: 1.5rem;
+  }
+}

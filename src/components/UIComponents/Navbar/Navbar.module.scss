@@ -49,3 +49,16 @@
     }
   }
 }
+
+@media (min-width: $sm) and (max-width: $md) {
+  .root {
+    & > .navbar {
+      padding-block: 1.8rem;
+
+      & > .primaryMenuContainer,
+      .secondaryMenuContainer {
+        display: none;
+      }
+    }
+  }
+}

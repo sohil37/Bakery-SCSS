@@ -3,7 +3,7 @@
 $lgArrowGap: 0.7rem;
 $lgArrowLength: 4rem;
 $mdArrowGap: 0.6rem;
-$mdArrowLength: rem;
+$mdArrowLength: 3.5rem;
 
 .arrow {
   border-left: none;
@@ -53,7 +53,7 @@ $mdArrowLength: rem;
   }
 }
 
-@media (min-width: $md) and (max-width: $lg) {
+@media (min-width: $sm) and (max-width: $lg) {
   .root {
     top: -$mdArrowLength;
 

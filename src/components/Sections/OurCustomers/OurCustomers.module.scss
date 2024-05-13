@@ -18,3 +18,9 @@
     padding-block: 12rem;
   }
 }
+
+@media (min-width: $sm) and (max-width: $md) {
+  .root {
+    padding-block: 10rem;
+  }
+}

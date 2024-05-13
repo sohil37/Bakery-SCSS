@@ -62,7 +62,7 @@
   }
 }
 
-@media (min-width: $md) and (max-width: $lg) {
+@media (min-width: $sm) and (max-width: $lg) {
   .root {
     padding: 1.2rem;
     & > .imgContainer {

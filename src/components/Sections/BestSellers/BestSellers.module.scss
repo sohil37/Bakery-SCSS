@@ -28,3 +28,13 @@
     }
   }
 }
+
+@media (min-width: $sm) and (max-width: $md) {
+  .root {
+    padding-top: 10rem;
+
+    & > .carouselContainer {
+      gap: 3rem;
+    }
+  }
+}

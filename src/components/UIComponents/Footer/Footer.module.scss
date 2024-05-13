@@ -92,3 +92,27 @@
     }
   }
 }
+
+@media (min-width: $sm) and (max-width: $md) {
+  .root {
+    & > .footer {
+      padding-block: 3rem;
+
+      & > .leftContainer {
+        & > .desc {
+          font-size: 1.4rem;
+        }
+      }
+      & > .rightContainer {
+        gap: 5rem;
+        & > .linksContainer {
+          gap: 2rem;
+
+          & > a {
+            font-size: 1.4rem;
+          }
+        }
+      }
+    }
+  }
+}
