@@ -8,9 +8,11 @@
 .slick-slide {
   padding-inline: 1.75rem;
 }
+
 .slick-track {
   margin-bottom: 2.4rem;
 }
+
 .slick-dots {
   @include displayFlex(row, 0.5rem);
 

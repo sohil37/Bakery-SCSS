@@ -6,6 +6,7 @@ $mdArrowGap: 0.6rem;
 $mdArrowLength: 3.5rem;
 $xsArrowGap: 0.5rem;
 $xsArrowLength: 3rem;
+
 .arrow {
   border-left: none;
   border-top: none;
@@ -37,16 +38,19 @@ $xsArrowLength: 3rem;
     left: $lgArrowGap;
     @extend .arrow;
   }
+
   & > :nth-child(2) {
     top: $lgArrowGap * 2;
     left: $lgArrowGap * 2;
     @extend .arrow;
   }
+
   & > :nth-child(3) {
     top: $lgArrowGap * 3;
     left: $lgArrowGap * 3;
     @extend .arrow;
   }
+
   & > :nth-child(4) {
     top: $lgArrowGap * 4;
     left: $lgArrowGap * 4;
@@ -68,14 +72,17 @@ $xsArrowLength: 3rem;
       top: $mdArrowGap;
       left: $mdArrowGap;
     }
+
     & > :nth-child(2) {
       top: $mdArrowGap * 2;
       left: $mdArrowGap * 2;
     }
+
     & > :nth-child(3) {
       top: $mdArrowGap * 3;
       left: $mdArrowGap * 3;
     }
+
     & > :nth-child(4) {
       top: $mdArrowGap * 4;
       left: $mdArrowGap * 4;
@@ -97,14 +104,17 @@ $xsArrowLength: 3rem;
       top: $xsArrowGap;
       left: $xsArrowGap;
     }
+
     & > :nth-child(2) {
       top: $xsArrowGap * 2;
       left: $xsArrowGap * 2;
     }
+
     & > :nth-child(3) {
       top: $xsArrowGap * 3;
       left: $xsArrowGap * 3;
     }
+
     & > :nth-child(4) {
       top: $xsArrowGap * 4;
       left: $xsArrowGap * 4;

@@ -35,6 +35,12 @@
         @extend .text;
       }
     }
+
+    & > .menuIcon {
+      display: none;
+      font-size: 1.6rem;
+      color: #81008c;
+    }
   }
 }
 
@@ -59,6 +65,10 @@
       .secondaryMenuContainer {
         display: none;
       }
+
+      & > .menuIcon {
+        display: block;
+      }
     }
   }
 }
@@ -75,8 +85,7 @@
       }
 
       & > .menuIcon {
-        font-size: 1.6rem;
-        color: #81008c;
+        display: block;
       }
     }
   }

@@ -25,12 +25,12 @@ function NewArticles() {
   }, []);
 
   return (
-    <div className={styles.root}>
+    <section className={styles.root}>
       <SectionDashedHeading heading="OUR NEW ARTICLES" />
       <div className={styles.carouselContainer}>
         {cards && <Carousel items={cards} itemsToShow={3}></Carousel>}
       </div>
-    </div>
+    </section>
   );
 }
 

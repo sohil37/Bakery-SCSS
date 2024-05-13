@@ -19,8 +19,8 @@ const usefulLinks = [
 
 function Footer() {
   return (
-    <div className={styles.root}>
-      <footer className={styles.footer}>
+    <footer className={styles.root}>
+      <div className={styles.footer}>
         <div className={styles.leftContainer}>
           <h2 className={styles.brand}>Bakery</h2>
           <p className={styles.desc}>
@@ -67,8 +67,8 @@ function Footer() {
             })}
           </div>
         </div>
-      </footer>
-    </div>
+      </div>
+    </footer>
   );
 }
 

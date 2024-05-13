@@ -25,12 +25,12 @@ function OurCustomers() {
   }, []);
 
   return (
-    <div className={styles.root}>
+    <section className={styles.root}>
       <SectionDashedHeading heading="OUR CUSTOMERS" />
       <div className={styles.carouselContainer}>
         {cards && <Carousel items={cards} itemsToShow={2}></Carousel>}
       </div>
-    </div>
+    </section>
   );
 }
 

@@ -6,8 +6,8 @@ import styles from "./Navbar.module.scss";
 
 function Navbar() {
   return (
-    <div className={styles.root}>
-      <nav className={styles.navbar}>
+    <nav className={styles.root}>
+      <div className={styles.navbar}>
         <a href="#" className={styles.navbarBrand}>
           Bakery
         </a>
@@ -27,8 +27,8 @@ function Navbar() {
           </a>
         </div>
         <FontAwesomeIcon icon={faBars} className={styles.menuIcon} />
-      </nav>
-    </div>
+      </div>
+    </nav>
   );
 }
 

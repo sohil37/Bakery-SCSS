@@ -26,7 +26,7 @@ function BestSellers() {
   }, []);
 
   return (
-    <div className={styles.root}>
+    <section className={styles.root}>
       <SectionDashedHeading heading="OUR BEST SELLERS" />
       <div className={styles.carouselContainer}>
         <TransparentButton>
@@ -34,7 +34,7 @@ function BestSellers() {
         </TransparentButton>
         {cards && <Carousel items={cards} itemsToShow={3}></Carousel>}
       </div>
-    </div>
+    </section>
   );
 }
 

@@ -52,12 +52,14 @@ $xs-wave-width: 20rem;
 @media (min-width: $lg) and (max-width: $xl) {
   .root {
     padding-top: 18rem;
+
     & > .sectionContainer {
       gap: 5rem;
 
       & > .leftContainer {
         width: 30%;
       }
+
       & > .rightContainer {
         width: 70%;
       }
@@ -68,12 +70,14 @@ $xs-wave-width: 20rem;
 @media (min-width: $md) and (max-width: $lg) {
   .root {
     padding-top: 15rem;
+
     & > .sectionContainer {
       gap: 3rem;
 
       & > .leftContainer {
         width: 30%;
       }
+
       & > .rightContainer {
         width: 70%;
       }
@@ -97,6 +101,7 @@ $xs-wave-width: 20rem;
       & > .leftContainer {
         width: 100%;
       }
+
       & > .rightContainer {
         width: 100%;
       }
@@ -120,6 +125,7 @@ $xs-wave-width: 20rem;
       & > .leftContainer {
         width: 100%;
       }
+
       & > .rightContainer {
         width: 100%;
       }

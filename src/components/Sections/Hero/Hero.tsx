@@ -16,7 +16,7 @@ const iconColor = "#ffe7e7";
 
 function HeroSection() {
   return (
-    <div className={styles.root}>
+    <section className={styles.root}>
       <div className={styles.contentContainer}>
         <div className={styles.leftContainer}>
           <h1 className={styles.title}>
@@ -50,7 +50,7 @@ function HeroSection() {
         </div>
       </div>
       <DownArrow />
-    </div>
+    </section>
   );
 }
 

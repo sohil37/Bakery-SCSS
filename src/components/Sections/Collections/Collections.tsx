@@ -21,7 +21,7 @@ const timeline = [
 
 function CollectionSection() {
   return (
-    <div className={styles.root}>
+    <section className={styles.root}>
       <div className={styles.sectionContainer}>
         <div className={styles.leftContainer}>
           <p className={styles.title}>See Collection</p>
@@ -31,7 +31,7 @@ function CollectionSection() {
           <DottedTimeline timeline={timeline} />
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
