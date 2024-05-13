@@ -6,8 +6,8 @@
 .root {
   @extend .container;
 
-  .navbar {
-    height: 10rem;
+  & > .navbar {
+    padding-block: 3rem;
     padding-inline: 3rem;
     border-bottom-left-radius: 2rem;
     border-bottom-right-radius: 2rem;
@@ -33,6 +33,18 @@
 
       & > a {
         @extend .text;
+      }
+    }
+  }
+}
+
+@media (min-width: $md) and (max-width: $lg) {
+  .root {
+    & > .navbar {
+      padding-block: 2.5rem;
+
+      & > .primaryMenuContainer {
+        gap: 2.5rem;
       }
     }
   }

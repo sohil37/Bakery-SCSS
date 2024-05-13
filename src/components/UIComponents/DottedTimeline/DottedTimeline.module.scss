@@ -2,10 +2,13 @@
 @import "../../../styles/mixins";
 @import "../../../styles/typography";
 
+$lg-horizontal-line-height: 8.5rem;
+$md-horizontal-line-height: 5rem;
+
 .root {
   width: 100%;
   border-top: 0.2rem dashed $dash-color;
-  padding-top: 8.5rem;
+  padding-top: $lg-horizontal-line-height;
   position: relative;
   @include displayFlex(row, _, space-between);
 
@@ -21,6 +24,15 @@
       @include displayFlex(row, 0, center, center);
       box-shadow: 0.2rem 1.3rem 2rem rgba(255, 190, 190, 0.25);
 
+      &::after {
+        content: "";
+        height: $lg-horizontal-line-height;
+        border: 0.025rem solid $dash-color;
+        position: absolute;
+        top: 0;
+        z-index: 1;
+      }
+
       & > .dot {
         height: 1.6rem;
         width: 1.6rem;
@@ -33,15 +45,6 @@
       & > img {
         width: 100%;
       }
-    }
-
-    & > .imageContainer::after {
-      content: "";
-      height: 8.5rem;
-      border: 0.025rem solid $dash-color;
-      position: absolute;
-      top: 0;
-      z-index: 1;
     }
 
     & > .desc {
@@ -58,6 +61,33 @@
         height: 12rem;
         width: 12rem;
         padding: 0.8rem;
+      }
+    }
+  }
+}
+
+@media (min-width: $md) and (max-width: $lg) {
+  .root {
+    padding-top: $md-horizontal-line-height;
+
+    & > .item {
+      & > .imageContainer {
+        height: 10rem;
+        width: 10rem;
+        padding: 0.5rem;
+
+        &::after {
+          height: $md-horizontal-line-height;
+        }
+
+        & > .dot {
+          height: 1.3rem;
+          width: 1.3rem;
+        }
+      }
+
+      & > .desc {
+        font-size: 1.4rem;
       }
     }
   }

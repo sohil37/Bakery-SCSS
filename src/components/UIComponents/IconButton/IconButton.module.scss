@@ -1,9 +1,8 @@
 @import "../../../styles/variables";
 
 .root {
-  padding: $buttonPadding;
-  border-radius: 1rem;
   padding: 1rem;
+  border-radius: 1rem;
   border: none;
 
   &:hover {
@@ -13,5 +12,20 @@
   & > svg {
     height: 2rem;
     width: 2rem;
+  }
+}
+
+@media (min-width: $md) and (max-width: $lg) {
+  .root {
+    padding: 0.7rem;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    & > svg {
+      height: 1.8rem;
+      width: 1.8rem;
+    }
   }
 }

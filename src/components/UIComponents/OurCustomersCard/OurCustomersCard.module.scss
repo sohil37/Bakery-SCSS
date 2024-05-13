@@ -52,3 +52,29 @@
     }
   }
 }
+
+@media (min-width: $md) and (max-width: $lg) {
+  .root {
+    padding: 2.5rem;
+
+    & > .header {
+      gap: 2.5rem;
+
+      & > img {
+        height: 6.5rem;
+        width: 6.5rem;
+      }
+
+      & > .namePlaceContainer {
+        & > .name {
+          font-size: 2rem;
+        }
+      }
+    }
+
+    & > .desc {
+      font-size: 1.4rem;
+      margin-top: 2.5rem;
+    }
+  }
+}

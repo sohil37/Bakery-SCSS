@@ -1,5 +1,9 @@
-$arrowGap: 0.7rem;
-$arrowLength: 4rem;
+@import "../../../styles/variables";
+
+$lgArrowGap: 0.7rem;
+$lgArrowLength: 4rem;
+$mdArrowGap: 0.6rem;
+$mdArrowLength: rem;
 
 .arrow {
   border-left: none;
@@ -9,7 +13,7 @@ $arrowLength: 4rem;
 .root {
   position: relative;
   transform: rotate(45deg);
-  top: -$arrowLength;
+  top: -$lgArrowLength;
 
   &:hover {
     cursor: pointer;
@@ -22,29 +26,58 @@ $arrowLength: 4rem;
 
   & > div {
     position: absolute;
-    height: $arrowLength;
-    width: $arrowLength;
+    height: $lgArrowLength;
+    width: $lgArrowLength;
     border: 0.4rem solid #f3bdbf;
   }
 
   & > :nth-child(1) {
-    top: $arrowGap;
-    left: $arrowGap;
+    top: $lgArrowGap;
+    left: $lgArrowGap;
     @extend .arrow;
   }
   & > :nth-child(2) {
-    top: $arrowGap * 2;
-    left: $arrowGap * 2;
+    top: $lgArrowGap * 2;
+    left: $lgArrowGap * 2;
     @extend .arrow;
   }
   & > :nth-child(3) {
-    top: $arrowGap * 3;
-    left: $arrowGap * 3;
+    top: $lgArrowGap * 3;
+    left: $lgArrowGap * 3;
     @extend .arrow;
   }
   & > :nth-child(4) {
-    top: $arrowGap * 4;
-    left: $arrowGap * 4;
+    top: $lgArrowGap * 4;
+    left: $lgArrowGap * 4;
     @extend .arrow;
+  }
+}
+
+@media (min-width: $md) and (max-width: $lg) {
+  .root {
+    top: -$mdArrowLength;
+
+    & > div {
+      height: $mdArrowLength;
+      width: $mdArrowLength;
+      border-width: 0.3rem;
+    }
+
+    & > :nth-child(1) {
+      top: $mdArrowGap;
+      left: $mdArrowGap;
+    }
+    & > :nth-child(2) {
+      top: $mdArrowGap * 2;
+      left: $mdArrowGap * 2;
+    }
+    & > :nth-child(3) {
+      top: $mdArrowGap * 3;
+      left: $mdArrowGap * 3;
+    }
+    & > :nth-child(4) {
+      top: $mdArrowGap * 4;
+      left: $mdArrowGap * 4;
+    }
   }
 }

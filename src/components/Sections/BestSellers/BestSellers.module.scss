@@ -10,12 +10,21 @@
 
   & > .carouselContainer {
     margin-top: 2.4rem;
-
     @include displayFlex(column, 4rem, _, end);
 
     & .text {
       @extend .h4;
       color: $secondary-font-color;
+    }
+  }
+}
+
+@media (min-width: $md) and (max-width: $lg) {
+  .root {
+    padding-top: 12rem;
+
+    & > .carouselContainer {
+      gap: 3rem;
     }
   }
 }

@@ -70,3 +70,25 @@
     }
   }
 }
+
+@media (min-width: $md) and (max-width: $lg) {
+  .root {
+    & > .footer {
+      & > .leftContainer {
+        & > .desc {
+          font-size: 1.4rem;
+        }
+      }
+      & > .rightContainer {
+        gap: 5rem;
+        & > .linksContainer {
+          gap: 2rem;
+
+          & > a {
+            font-size: 1.4rem;
+          }
+        }
+      }
+    }
+  }
+}

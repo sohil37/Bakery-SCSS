@@ -6,7 +6,8 @@
   background-color: $button-color;
   color: $button-font-color;
   line-height: $primary-font-semi-bold-line-height;
-  padding: $buttonPadding;
+  padding-block: 1.2rem;
+  padding-inline: 1.6rem;
   border-radius: 1rem;
   border: none;
   width: max-content;

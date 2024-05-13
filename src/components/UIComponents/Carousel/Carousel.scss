@@ -35,3 +35,20 @@
     padding-inline: 1.5rem;
   }
 }
+
+@media (min-width: $md) and (max-width: $lg) {
+  .slick-slide {
+    padding-inline: 1.2rem;
+  }
+
+  .slick-track {
+    margin-bottom: 1.8rem;
+  }
+
+  .slick-dots {
+    li {
+      height: 1.3rem;
+      width: 1.3rem;
+    }
+  }
+}

@@ -61,3 +61,32 @@
     }
   }
 }
+
+@media (min-width: $md) and (max-width: $lg) {
+  .root {
+    padding: 1.2rem;
+    & > .imgContainer {
+      & > .img {
+        height: 12rem;
+      }
+    }
+
+    & > .desc {
+      font-size: 1.4rem;
+    }
+
+    & > .actionContainer {
+      margin-top: 3.5rem;
+
+      & > .price {
+        font-size: 1.8rem;
+      }
+
+      & > button {
+        padding-block: 1rem;
+        padding-inline: 1.2rem;
+        font-size: 1.2rem;
+      }
+    }
+  }
+}

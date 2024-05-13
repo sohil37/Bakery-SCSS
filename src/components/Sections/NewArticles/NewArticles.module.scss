@@ -11,3 +11,9 @@
     margin-top: 2.4rem;
   }
 }
+
+@media (min-width: $md) and (max-width: $lg) {
+  .root {
+    padding-top: 12rem;
+  }
+}
