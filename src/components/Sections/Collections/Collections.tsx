@@ -1,23 +1,6 @@
+import { timeline } from "../../../data/timeline";
 import DottedTimeline from "../../UIComponents/DottedTimeline/DottedTimeline";
 import styles from "./Collections.module.scss";
-
-const timeline = [
-  {
-    text: "There are some redeming factors in greeking text",
-    dotColor: "#bc7aff",
-    imgUrl: "/images/products/cakes/cake1.png",
-  },
-  {
-    text: "There are some redeming factors in greeking text",
-    dotColor: "#748aff",
-    imgUrl: "/images/products/cakes/cake2.png",
-  },
-  {
-    text: "There are some redeming factors in greeking text",
-    dotColor: "#fd85ff",
-    imgUrl: "/images/products/cakes/cake3.png",
-  },
-];
 
 function CollectionSection() {
   return (
