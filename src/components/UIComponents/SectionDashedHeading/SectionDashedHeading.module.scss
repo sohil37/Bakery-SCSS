@@ -19,3 +19,11 @@
     flex: 1;
   }
 }
+
+@media (min-width: $xs) and (max-width: $sm) {
+  .root {
+    & > .hr {
+      visibility: hidden;
+    }
+  }
+}

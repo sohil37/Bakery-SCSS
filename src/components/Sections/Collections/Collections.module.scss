@@ -7,6 +7,8 @@ $lg-wave-height: 4.5rem;
 $lg-wave-width: 55rem;
 $sm-wave-height: 2.5rem;
 $sm-wave-width: 30rem;
+$xs-wave-height: 2.5rem;
+$xs-wave-width: 20rem;
 
 .root {
   padding-top: 25.2rem;
@@ -86,6 +88,29 @@ $sm-wave-width: 30rem;
     &::before {
       height: $sm-wave-height;
       mask-size: $sm-wave-width $sm-wave-height;
+    }
+
+    & > .sectionContainer {
+      gap: 3rem;
+      flex-direction: column;
+
+      & > .leftContainer {
+        width: 100%;
+      }
+      & > .rightContainer {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (min-width: $xs) and (max-width: $sm) {
+  .root {
+    padding-top: 8rem;
+
+    &::before {
+      height: $xs-wave-height;
+      mask-size: $xs-wave-width $sm-wave-height;
     }
 
     & > .sectionContainer {

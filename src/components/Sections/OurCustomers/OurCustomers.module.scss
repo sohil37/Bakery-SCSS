@@ -24,3 +24,9 @@
     padding-block: 10rem;
   }
 }
+
+@media (min-width: $xs) and (max-width: $sm) {
+  .root {
+    padding-block: 8rem;
+  }
+}

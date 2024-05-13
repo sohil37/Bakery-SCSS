@@ -105,3 +105,42 @@
     }
   }
 }
+
+@media (min-width: 0) and (max-width: $sm) {
+  .root {
+    padding-top: 4rem;
+    padding-bottom: 10rem;
+    @include displayFlex(column, 3.5rem, center, center);
+
+    & > .contentContainer {
+      flex-wrap: wrap-reverse;
+      gap: 0;
+      & > .leftContainer,
+      .rightContainer {
+        width: 100%;
+      }
+
+      & > .leftContainer {
+        padding-right: 0;
+        gap: 2rem;
+        align-items: center;
+
+        & > .title {
+          text-align: center;
+        }
+
+        & > .desc {
+          text-align: center;
+        }
+      }
+
+      & > .rightContainer {
+        @include displayFlex(row, _, center, center);
+
+        & > img {
+          width: 60%;
+        }
+      }
+    }
+  }
+}

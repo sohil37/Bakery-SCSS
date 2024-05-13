@@ -116,3 +116,31 @@
     }
   }
 }
+
+@media (min-width: $xs) and (max-width: $sm) {
+  .root {
+    & > .footer {
+      padding-block: 3rem;
+      grid-template-columns: 1fr;
+      column-gap: 2rem;
+
+      & > .leftContainer {
+        gap: 2rem;
+        justify-content: start;
+
+        & > .desc {
+          font-size: 1.4rem;
+        }
+      }
+      & > .rightContainer {
+        justify-content: space-between;
+        gap: 2rem;
+        margin-bottom: 2rem;
+
+        & > .linksContainer {
+          gap: 2rem;
+        }
+      }
+    }
+  }
+}

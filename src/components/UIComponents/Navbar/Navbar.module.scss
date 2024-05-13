@@ -62,3 +62,22 @@
     }
   }
 }
+
+@media (min-width: $xs) and (max-width: $sm) {
+  .root {
+    & > .navbar {
+      padding-block: 1.5rem;
+      padding-inline: 2rem;
+
+      & > .primaryMenuContainer,
+      .secondaryMenuContainer {
+        display: none;
+      }
+
+      & > .menuIcon {
+        font-size: 1.6rem;
+        color: #81008c;
+      }
+    }
+  }
+}

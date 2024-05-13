@@ -69,3 +69,20 @@
     }
   }
 }
+
+@media (min-width: $xs) and (max-width: $sm) {
+  .slick-slide {
+    padding-inline: 1rem;
+  }
+
+  .slick-track {
+    margin-bottom: 1.8rem;
+  }
+
+  .slick-dots {
+    li {
+      height: 1rem;
+      width: 1rem;
+    }
+  }
+}

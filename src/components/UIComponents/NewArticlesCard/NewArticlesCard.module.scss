@@ -77,3 +77,23 @@
     }
   }
 }
+
+@media (min-width: $xs) and (max-width: $sm) {
+  .root {
+    padding: 1.2rem;
+    height: 37rem;
+
+    & > .contentContainer {
+      padding: 1.2rem;
+      & > .date {
+        width: 5rem;
+        font-size: 1.3rem;
+        padding: 1rem 0.2rem;
+      }
+
+      & > .title {
+        font-size: 1.6rem;
+      }
+    }
+  }
+}

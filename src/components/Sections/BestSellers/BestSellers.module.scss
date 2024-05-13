@@ -38,3 +38,13 @@
     }
   }
 }
+
+@media (min-width: $xs) and (max-width: $sm) {
+  .root {
+    padding-top: 8rem;
+
+    & > .carouselContainer {
+      gap: 3rem;
+    }
+  }
+}

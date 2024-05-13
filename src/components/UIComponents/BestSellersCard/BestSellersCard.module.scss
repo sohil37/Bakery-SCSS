@@ -90,3 +90,32 @@
     }
   }
 }
+
+@media (min-width: $xs) and (max-width: $sm) {
+  .root {
+    padding: 1.2rem;
+    & > .imgContainer {
+      & > .img {
+        height: 16rem;
+      }
+    }
+
+    & > .desc {
+      font-size: 1.4rem;
+    }
+
+    & > .actionContainer {
+      margin-top: 3.5rem;
+
+      & > .price {
+        font-size: 1.8rem;
+      }
+
+      & > button {
+        padding-block: 1rem;
+        padding-inline: 1.2rem;
+        font-size: 1.2rem;
+      }
+    }
+  }
+}

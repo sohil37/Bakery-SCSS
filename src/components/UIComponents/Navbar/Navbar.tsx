@@ -1,5 +1,5 @@
 import { faHeart } from "@fortawesome/free-regular-svg-icons";
-import { faBasketShopping } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faBasketShopping } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import styles from "./Navbar.module.scss";
@@ -26,6 +26,7 @@ function Navbar() {
             <FontAwesomeIcon icon={faBasketShopping} />
           </a>
         </div>
+        <FontAwesomeIcon icon={faBars} className={styles.menuIcon} />
       </nav>
     </div>
   );

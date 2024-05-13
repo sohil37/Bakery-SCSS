@@ -5,8 +5,9 @@
   padding-inline: 3rem;
 
   // Media queries for responsiveness
-  @media (min-width: 0px) {
+  @media (min-width: $xs) {
     max-width: 100%;
+    padding-inline: 1.5rem;
   }
 
   @media (min-width: $md) {
